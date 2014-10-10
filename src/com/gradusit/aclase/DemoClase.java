@@ -19,6 +19,9 @@ class Clase {
      int ganancia (){
          return ingreso() - sueldoprof;
      }
+     int horasrequeridas (int objetivoanual) {
+         return  ( objetivoanual + sueldoprof) / preciohora;
+     }
 }
 public class DemoClase {
     public static void main(String args []) {
@@ -29,6 +32,7 @@ public class DemoClase {
         yogaclase.sueldoprof = 4000;
         System.out.println("Ingreso: " + yogaclase.ingreso());
         System.out.println("Ganancia: " + yogaclase.ganancia());
+        System.out.println("Horas requeridas para el objetivo anual (100000): " + yogaclase.horasrequeridas(100000));
     }
 
 
